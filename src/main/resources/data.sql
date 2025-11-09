@@ -1,4 +1,4 @@
-INSERT IGNORE INTO todos (id, titile, priority, status) VALUES
+INSERT IGNORE INTO todos (id, title, priority, status) VALUES 
   (1, '売上レポートの作成', '高', '着手中'),
   (2, '定例会議への参加', '中', '未着手'),
   (3, '提案書の作成', '高', '着手中'),
