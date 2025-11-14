@@ -1,0 +1,10 @@
+package com.example.springkadaitodo.repository;
+
+import org.springframework.stereotype.Repository;
+
+import com.example.springkadaitodo.entity.ToDo;
+
+@Repository
+public interface ToDoRepository extends JpaReposiroty<ToDo, Integer>{
+	// JpaRepository によって findAll(), save(), deleteById() などが使える
+}

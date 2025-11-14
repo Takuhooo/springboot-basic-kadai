@@ -1,0 +1,5 @@
+package com.example.springpractice.form;
+
+public class ProductRegisterForm {
+
+}

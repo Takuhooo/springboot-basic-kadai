@@ -1,0 +1,5 @@
+package com.example.springpractice.entity;
+
+public class User {
+
+}
