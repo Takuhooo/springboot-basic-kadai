@@ -7,12 +7,11 @@
     <style>
         .error {
             color: red;
+            display: block;
             margin-top: 4px;
             margin-bottom: 8px;
-            display: block;
         }
     </style>
-
 </head>
 <body>
 
@@ -24,29 +23,24 @@
     <div>
         <label>お名前：</label><br>
         <input type="text" th:field="*{name}">
-        <span class="error" th:if="${#fields.hasErrors('name')}"
-              th:errors="*{name}"></span>
+        <span class="error" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
     </div>
 
-    <!-- メールアドレス -->
+    <!-- メール -->
     <div>
         <label>メールアドレス：</label><br>
         <input type="text" th:field="*{email}">
-        <span class="error" th:if="${#fields.hasErrors('email')}"
-              th:errors="*{email}"></span>
+        <span class="error" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
     </div>
 
     <!-- メッセージ -->
     <div>
         <label>お問い合わせ内容：</label><br>
         <textarea th:field="*{message}" cols="30" rows="10"></textarea>
-        <span class="error" th:if="${#fields.hasErrors('message')}"
-              th:errors="*{message}"></span>
+        <span class="error" th:if="${#fields.hasErrors('message')}" th:errors="*{message}"></span>
     </div>
 
-    <div>
-        <input type="submit" value="確認画面へ">
-    </div>
+    <input type="submit" value="確認画面へ">
 
 </form>
 
